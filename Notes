@@ -1,1 +1,50 @@
-shell scripts
+1>write a shell script to display the statement?
+2>write a script to display the below output ***********************name*********8
+3>write a script to read the value and display? name=anil
+4>write a script to pass the input value usin cmd line arguments
+
+5>write a script whether the value of m s equal to 5 or not
+6>write a script  to find the biggest of 2 numbers.
+7>write a script to find the given name is a file or dir or link?
+8>write a script to find the sum of two numbers
+
+9>write a script to find the factorial of n numbers
+10>write a script to count the no.of characters in each line of a file.
+11>write a script to find the no of words in each line of a file.
+12>write a script to read the file and display in the reverse order
+13>write a script to display the employe nameifthe age s greater than 60
+
+14>write a script to monitor the diskspace if the diskspace has reached the threshold value send a mail
+15>services stopped send a mail
+16>cleanup retains the recent builds and delete the old builds. 5 retains build
+
+17>write a scripts to find the sum of elements in an array
+18>write a script to rename all the text files into html file
+19>write a script to display the file name which contains a specific pattern otherwise it wil display the error msg.
+20>write a script to print the below statements
+	1.if the value s 1 print gud mrng
+	2.if the value s 2, print wrkin hours
+	for the other valuses print hliday
+21>write a script as below as per date cmd
+mon - create folder
+tue - create files
+wed - copy the files to folder
+thu backup the folder
+fri - delete the folder
+sat and sun - print holiday
+22> write a sscript to fint the biggest of 3 numbers throug cmd agruments
+23>write a script to find the lenght of an array
+24>write a script to find the biggest of element in an array
+
+25>reverse a string
+#!/bin/bash
+echo "enter the string"
+read str
+count=`cat -n $str | wc -c`
+while [ $count -gt 0 ]
+do
+	char=`echo $str | cut -c$count`
+	revers=$revers$char
+	count=`expr $count - 1`
+done
+echo $reverse
